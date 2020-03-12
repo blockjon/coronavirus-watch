@@ -9,3 +9,5 @@ then run it
 ```
 python3 main.py
 ```
+
+Gets data from endpoints that power https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
