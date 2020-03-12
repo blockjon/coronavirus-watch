@@ -64,6 +64,7 @@ def say_it(message):
 
 
 if __name__ == "__main__":
+    logging.info("I'll let you know when more cases are reported.")
     while True:
         with open('data.json', 'r') as file:
             data_store = json.loads(file.read())
