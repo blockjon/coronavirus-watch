@@ -1,0 +1,1 @@
+A basic Python3 script that I run on my Mac to hear about new corona virus cases as they emerge.
