@@ -74,13 +74,13 @@ if __name__ == "__main__":
 
         if us_infections > data_store['us_infections']:
             new_cases = us_infections - data_store['us_infections']
-            say_it("Confirmed corona virus infections in the United States have increased by {} cases.".format(
+            say_it("Confirmed coronavirus infections in the United States have increased by {} cases.".format(
                 new_cases
             ))
             said_something = True
         if non_china_infections > data_store['non_china_infections']:
             new_cases = non_china_infections - data_store['non_china_infections']
-            say_it("Confirmed worldwide corona virus infections outside of China have increased by {} cases.".format(
+            say_it("Confirmed worldwide coronavirus infections outside of China have increased by {} cases.".format(
                 new_cases
             ))
             said_something = True
@@ -88,6 +88,7 @@ if __name__ == "__main__":
             logging.info("Re-entering the {} second poll loop. I'll let you know when more cases are reported.".format(
                 SLEEP_SECONDS
             ))
+            logging.info("Data source: https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6")
 
         data_store['us_infections'] = us_infections
         data_store['non_china_infections'] = non_china_infections
